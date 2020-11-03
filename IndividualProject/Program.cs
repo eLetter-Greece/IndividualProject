@@ -13,16 +13,8 @@ namespace IndividualProject
         static void Main(string[] args)
         {
             CommandPromptUtils cpUtils = new CommandPromptUtils();
-            //Trainer trainer =  cpUtils.GetTrainerDetails();
-            //Console.WriteLine(trainer);
-
-            //Trainer trainer2 = cpUtils.GetTrainerDetails();
-            //Console.WriteLine(trainer2);
-
             List<Trainer> trainers = new List<Trainer>();
             trainers.Add(cpUtils.GetTrainerDetails());
-            //trainers.Add(cpUtils.GetTrainerDetails());
-            //trainers.Add(cpUtils.GetTrainerDetails());
             cpUtils.PrintTrainersList(trainers);
 
         }
